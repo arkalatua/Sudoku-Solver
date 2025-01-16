@@ -23,7 +23,6 @@ public:
             for(int j = 0 ; j<9 ; j++){
                 if(board[i][j]!='.'){
                     if(checksolver(board , i , j)==false){
-                        //cout<<i<<" "<<j<<endl;
                         return false;
                     }
                 }
@@ -40,7 +39,7 @@ int main(){
     vector<vector<char>>sudoku;
     vector<char>row;
     char element;
-    cout<<"Please enter the Sudoku to be solved: "<<"\n";
+    cout<<"Please enter the Sudoku to be checked: "<<"\n";
     for(int i = 0 ; i<9 ; i++){
         row={};
         for(int j = 0 ; j<9 ; j++){
